@@ -1,0 +1,98 @@
+// Google Fonts
+@import url(https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Narrow );
+
+// Font family
+$pt-sans: 'PT Sans', sans-serif;
+$pt-sans-narrow: 'PT Sans Narrow', sans-serif;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 14px;
+  font-family: $pt-sans;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.separator{
+  width: 100%;
+  height: 2px;
+  background-color: $greyDark;
+}
+
+// Font sizes
+.h1 {
+  font-size: 2rem;
+}
+
+.h2 {
+  font-size: 1.4rem;
+}
+
+.h3 {
+  font-size: 1.14rem;
+}
+
+.h4 {
+  font-size: 1rem;
+}
+
+.h5 {
+  font-size: .84rem;
+}
+
+
+// buttons 
+button { 
+  background-color: rgb(131, 131, 131);
+  padding:8px;
+  margin: 5px;
+    &:hover {
+    cursor: pointer;
+  }
+}
+
+.nav {
+  color: $white;
+  transition: color .5s;
+}
+
+.nav-active {
+  color: $greenAccent;
+}
+
+// display hide and show screen size 
+
+.d-m-hide {
+  @media (max-width: 500px) {
+    display: none;
+  }
+}   
+.d-m-show {
+  @media (min-width: 500px) {
+    display: none;
+  }
+}
+
+.d-t-hide {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}   
+.d-t-show {
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+hr {
+  border-top: 2px solid black;
+}
+
